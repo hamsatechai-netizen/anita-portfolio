@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.particle {
+  animation: particle-float 9s ease-in-out infinite;
+}
+
+@keyframes particle-float {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translate3d(24px, -30px, 0) scale(1.25);
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.11);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title {
+  color: #5eead4;
+}
+
+.hljs-string,
+.hljs-attr {
+  color: #fde68a;
+}
+
+.hljs-comment {
+  color: #94a3b8;
+}

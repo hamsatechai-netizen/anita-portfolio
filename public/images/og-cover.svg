@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset=".7" stop-color="#164E63"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <circle cx="980" cy="120" r="180" fill="#14B8A6" opacity=".18"/>
+  <circle cx="160" cy="520" r="180" fill="#FFFFFF" opacity=".08"/>
+  <text x="90" y="240" fill="#FFFFFF" font-family="Poppins, Arial" font-size="72" font-weight="800">Anita Ayyagari</text>
+  <text x="95" y="320" fill="#99F6E4" font-family="Inter, Arial" font-size="32" font-weight="700">Solution Architect | Data &amp; AI Leader</text>
+  <text x="95" y="390" fill="#E2E8F0" font-family="Inter, Arial" font-size="26">Enterprise Data Modernization · Responsible AI · Governance</text>
+</svg>

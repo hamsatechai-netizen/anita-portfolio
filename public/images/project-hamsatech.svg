@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <rect width="900" height="540" fill="#0F172A"/>
+  <path d="M130 364c58-116 145-175 261-175 116 0 203 59 261 175" fill="none" stroke="#14B8A6" stroke-width="28" stroke-linecap="round"/>
+  <circle cx="390" cy="190" r="58" fill="#CCFBF1"/>
+  <circle cx="610" cy="320" r="70" fill="#14B8A6" opacity=".8"/>
+  <circle cx="220" cy="320" r="44" fill="#F8FAFC" opacity=".9"/>
+  <text x="70" y="470" fill="#FFFFFF" font-family="Inter, Arial" font-size="38" font-weight="800">HamsaTech.ai</text>
+  <text x="70" y="508" fill="#99F6E4" font-family="Inter, Arial" font-size="20" font-weight="700">AI with Empathy Platform</text>
+</svg>

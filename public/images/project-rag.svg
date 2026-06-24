@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
+  <rect width="900" height="540" fill="#F8FAFC"/>
+  <rect x="90" y="126" width="170" height="220" rx="20" fill="#0F172A"/>
+  <rect x="365" y="96" width="170" height="280" rx="20" fill="#14B8A6"/>
+  <rect x="640" y="126" width="170" height="220" rx="20" fill="#0F172A"/>
+  <path d="M260 236h105M535 236h105" stroke="#14B8A6" stroke-width="18" stroke-linecap="round"/>
+  <path d="M130 188h90M130 244h70M130 300h100M405 170h90M405 226h70M405 282h100M680 188h90M680 244h70M680 300h100" stroke="#FFFFFF" stroke-opacity=".9" stroke-width="16" stroke-linecap="round"/>
+  <text x="90" y="472" fill="#0F172A" font-family="Inter, Arial" font-size="34" font-weight="800">GenAI + RAG Reference Architecture</text>
+</svg>
