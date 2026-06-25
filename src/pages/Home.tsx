@@ -1,24 +1,4 @@
 import { motion } from "framer-motion";
-import { Brain, Database, Network, ShieldCheck, Sparkles, Target } from "lucide-react";
-import { BlogCard } from "../components/BlogCard";
-import { ButtonLink } from "../components/ButtonLink";
-import { ParticleField } from "../components/ParticleField";
-import { ProjectCard } from "../components/ProjectCard";
-import { Section } from "../components/Section";
-import { Seo } from "../components/Seo";
-import { featuredSkills, profile, projects, testimonials } from "../data/profile";
-import { blogPosts } from "../lib/markdown";
-
-const metrics = [
-  { label: "Years in architecture and delivery", value: "16+" },
-  { label: "Core domains", value: "Data + AI" },
-  { label: "Focus", value: "Responsible AI" }
-];
-
-const featureIcons = [Database, ShieldCheck, Brain, Network, Sparkles, Target];
-
-
-import { motion } from "framer-motion";
 import {
   Brain,
   Database,
