@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://anita-portfolio.pages.dev/sitemap.xml
+Sitemap: https://anita-portfolio.hamsatech.ai/sitemap.xml

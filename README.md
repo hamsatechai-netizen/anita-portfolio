@@ -66,8 +66,6 @@ Use these settings:
 Set these environment variables when ready:
 
 ```text
-VITE_SITE_URL=https://your-domain.com
-VITE_CONTACT_EMAIL=your-email@example.com
 VITE_LINKEDIN_URL=https://www.linkedin.com/in/your-profile
 VITE_GITHUB_URL=https://github.com/your-profile
 VITE_MEDIUM_URL=https://medium.com/@your-profile

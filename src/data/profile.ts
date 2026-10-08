@@ -1,7 +1,7 @@
-export const siteUrl = import.meta.env.VITE_SITE_URL || "https://anita-portfolio.pages.dev";
+export const siteUrl = "https://anita-portfolio.hamsatech.ai";
 
 export const contact = {
-  email: import.meta.env.VITE_CONTACT_EMAIL || "anita.ayyagari913@gmail.com",
+  email: "anita@hamsatech.ai",
   linkedin: import.meta.env.VITE_LINKEDIN_URL || "https://www.linkedin.com/in/anita-ayyagari/",
   github: import.meta.env.VITE_GITHUB_URL || "https://github.com/hamsatechai-netizen",
   medium: import.meta.env.VITE_MEDIUM_URL || "https://medium.com/@anita.ayyagari913"
