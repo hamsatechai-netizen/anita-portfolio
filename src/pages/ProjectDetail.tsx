@@ -28,7 +28,13 @@ export default function ProjectDetail() {
         </Link>
         <div className="grid gap-8 lg:grid-cols-[1fr_0.85fr]">
           <div className="space-y-8">
-            <img className="w-full rounded-3xl border border-slate-200 bg-white object-cover shadow-executive dark:border-white/10" src={project.image} alt="" />
+            <div className={`overflow-hidden rounded-3xl border border-slate-200 shadow-executive dark:border-white/10 ${project.imageFit === "contain" ? "bg-[#173445] p-12" : "bg-white"}`}>
+              <img
+                className={`w-full ${project.imageFit === "contain" ? "max-h-96 object-contain" : "object-cover"}`}
+                src={project.image}
+                alt={project.imageFit === "contain" ? `${project.title} brand mark` : `${project.title} architecture overview`}
+              />
+            </div>
             <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5">
               <Compass className="text-teal" aria-hidden="true" size={26} />
               <h2 className="mt-4 font-heading text-2xl font-bold text-navy dark:text-white">The context</h2>

@@ -223,6 +223,7 @@ export type Project = {
   summary: string;
   description: string;
   image: string;
+  imageFit?: "cover" | "contain";
   technologies: string[];
   outcomes: string[];
   features: string[];
@@ -240,7 +241,8 @@ export const projects: Project[] = [
     summary: "Responsible AI platform concept for digital phenotyping, sports wellness, and behavioral intelligence.",
     description:
       "A human-centered AI platform concept focused on empathetic intelligence, safe personalization, and measurable wellness outcomes.",
-    image: "/images/project-hamsatech.svg",
+    image: "/images/hamsatech-logo-white.png",
+    imageFit: "contain",
     technologies: ["Responsible AI", "Digital Phenotyping", "Behavioral Intelligence", "Wellness Analytics"],
     outcomes: ["Defined product pillars", "Mapped ethical AI controls", "Outlined wellness intelligence workflows"],
     features: ["Digital Phenotyping", "Mental Wellness", "Farmer Support", "Responsible AI"],

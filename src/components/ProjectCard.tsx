@@ -12,7 +12,14 @@ export function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.45 }}
     >
-      <img className="h-48 w-full object-cover" src={project.image} alt="" loading="lazy" />
+      <div className={`h-48 w-full overflow-hidden ${project.imageFit === "contain" ? "bg-[#173445] p-8" : "bg-slate-50 dark:bg-slate-900"}`}>
+        <img
+          className={`h-full w-full ${project.imageFit === "contain" ? "object-contain" : "object-cover"}`}
+          src={project.image}
+          alt={project.imageFit === "contain" ? `${project.title} brand mark` : `${project.title} architecture overview`}
+          loading="lazy"
+        />
+      </div>
       <div className="p-6">
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-teal">{project.kicker}</p>
         <h3 className="mt-3 font-heading text-2xl font-bold text-navy dark:text-white">{project.title}</h3>

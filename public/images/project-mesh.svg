@@ -1,10 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540">
-  <rect width="900" height="540" fill="#0F172A"/>
-  <circle cx="450" cy="260" r="70" fill="#14B8A6"/>
-  <circle cx="220" cy="160" r="54" fill="#F8FAFC"/>
-  <circle cx="680" cy="160" r="54" fill="#CCFBF1"/>
-  <circle cx="250" cy="390" r="54" fill="#CCFBF1"/>
-  <circle cx="650" cy="390" r="54" fill="#F8FAFC"/>
-  <path d="M269 183 390 236M631 183 510 236M298 375l92-84M602 375l-92-84" stroke="#14B8A6" stroke-width="14" stroke-linecap="round"/>
-  <text x="70" y="486" fill="#FFFFFF" font-family="Inter, Arial" font-size="34" font-weight="800">Enterprise Data Mesh Accelerator</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="title desc"><title id="title">Federated enterprise data mesh architecture</title><desc id="desc">Domain-owned data products publish through shared governance standards into self-service discovery.</desc><rect width="900" height="540" rx="28" fill="#0f2940"/><text x="54" y="66" fill="#fff" font-family="Inter,Arial" font-size="28" font-weight="700">Federated Data Mesh</text><text x="54" y="96" fill="#99f6e4" font-family="Inter,Arial" font-size="16">Domain ownership with enterprise guardrails</text>
+<g font-family="Inter,Arial" text-anchor="middle"><g fill="#173a54" stroke="#5eead4" stroke-width="2"><rect x="54" y="152" width="190" height="86" rx="17"/><rect x="355" y="152" width="190" height="86" rx="17"/><rect x="656" y="152" width="190" height="86" rx="17"/></g><g fill="#fff" font-size="18" font-weight="700"><text x="149" y="188">Customer domain</text><text x="149" y="214" fill="#99f6e4" font-size="14">Owned data product</text><text x="450" y="188">Operations domain</text><text x="450" y="214" fill="#99f6e4" font-size="14">Owned data product</text><text x="751" y="188">Finance domain</text><text x="751" y="214" fill="#99f6e4" font-size="14">Owned data product</text></g><path d="M149 238v55M450 238v55M751 238v55" stroke="#2dd4bf" stroke-width="4"/>
+<rect x="86" y="293" width="728" height="94" rx="20" fill="#134e4a" stroke="#5eead4" stroke-width="2"/><text x="450" y="330" fill="#fff" font-size="20" font-weight="700">Federated governance + platform standards</text><text x="450" y="360" fill="#ccfbf1" font-size="15">Metadata · quality contracts · policy-aware access · interoperability</text><path d="M450 387v44" stroke="#38bdf8" stroke-width="4"/><rect x="220" y="431" width="460" height="66" rx="18" fill="#0b2033" stroke="#38bdf8" stroke-width="2"/><text x="450" y="471" fill="#fff" font-size="18" font-weight="700">Self-service discovery and trusted consumption</text></g></svg>
