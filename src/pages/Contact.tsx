@@ -25,11 +25,11 @@ export default function Contact() {
 
   return (
     <>
-      <Seo title="Contact | Anita Ayyagari" description="Contact Anita Ayyagari for solution architecture, AI architecture, and data leadership opportunities." path="/contact" />
+      <Seo title="Contact | Anita Ayyagari" description="Contact Anita Ayyagari for independent AI advisory, data architecture, governance, and innovation engagements." path="/contact" />
       <Section
         eyebrow="Contact"
-        title="Connect for architecture, AI, and data leadership conversations"
-        description="Use the form or social channels to discuss Solution Architect, Principal Architect, AI Architect, and Data Leadership opportunities."
+        title="Let’s turn your data and AI ambition into a responsible plan"
+        description="Available for freelance advisory, executive workshops, architecture reviews, AI governance, solution discovery, and innovation partnerships."
       >
         <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr]">
           <form className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5" onSubmit={handleSubmit}>

@@ -1,4 +1,4 @@
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, ExternalLink } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { BlogCard } from "../components/BlogCard";
 import { MarkdownRenderer } from "../components/MarkdownRenderer";
@@ -43,6 +43,17 @@ export default function BlogPost() {
           </div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/5 sm:p-10">
             <MarkdownRenderer body={post.body} />
+            {post.externalUrl && (
+              <a
+                className="mt-8 inline-flex items-center gap-2 rounded-full bg-teal px-5 py-3 text-sm font-bold text-navy transition hover:scale-[1.02]"
+                href={post.externalUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read the original article
+                <ExternalLink aria-hidden="true" size={16} />
+              </a>
+            )}
           </div>
         </Section>
       </article>

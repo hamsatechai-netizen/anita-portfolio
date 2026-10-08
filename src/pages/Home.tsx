@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
   Brain,
+  ChartNoAxesCombined,
   Database,
   Network,
   ShieldCheck,
@@ -17,27 +18,15 @@ import { Seo } from "../components/Seo";
 
 import {
   featuredSkills,
+  achievements,
+  advisoryServices,
+  currentFocus,
+  impactMetrics,
   profile,
-  projects,
-  testimonials
+  projects
 } from "../data/profile";
 
 import { blogPosts } from "../lib/markdown";
-
-const metrics = [
-  {
-    label: "Years in architecture and delivery",
-    value: "16+"
-  },
-  {
-    label: "Core domains",
-    value: "Data + AI"
-  },
-  {
-    label: "Focus",
-    value: "Responsible AI"
-  }
-];
 
 const featureIcons = [
   Database,
@@ -140,9 +129,9 @@ export default function Home() {
               alt="Anita Ayyagari"
             />
 
-            <div className="mt-5 grid grid-cols-3 gap-3">
+            <div className="mt-5 grid grid-cols-2 gap-3">
 
-              {metrics.map((metric) => (
+              {impactMetrics.map((metric) => (
 
                 <div
                   key={metric.label}
@@ -168,6 +157,52 @@ export default function Home() {
         </div>
 
       </section>
+
+      <Section eyebrow="What I am doing now" title="Architecture for trusted AI adoption and measurable enterprise value">
+        <div className="grid gap-6 lg:grid-cols-3">
+          {currentFocus.map((item, index) => (
+            <motion.article
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/5"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.06 }}
+              key={item.title}
+            >
+              <ChartNoAxesCombined className="text-teal" aria-hidden="true" size={24} />
+              <h2 className="mt-4 font-heading text-xl font-bold text-navy dark:text-white">{item.title}</h2>
+              <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{item.description}</p>
+            </motion.article>
+          ))}
+        </div>
+      </Section>
+
+      <Section eyebrow="Selected Impact" title="Evidence of architecture translating into outcomes" className="bg-white/70 dark:bg-white/[0.03]">
+        <div className="grid gap-5 md:grid-cols-2">
+          {achievements.map((achievement) => (
+            <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/5" key={achievement.title}>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-teal">{achievement.title}</p>
+              <h2 className="mt-3 font-heading text-2xl font-bold text-navy dark:text-white">{achievement.result}</h2>
+              <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{achievement.detail}</p>
+            </article>
+          ))}
+        </div>
+        <p className="mt-5 text-sm text-slate-500 dark:text-slate-400">Figures are drawn from professional experience; client names and confidential implementation details are intentionally omitted.</p>
+      </Section>
+
+      <Section eyebrow="Independent Advisory" title="Ways I can help your organization move from possibility to responsible execution">
+        <div className="grid gap-5 md:grid-cols-2">
+          {advisoryServices.map((service) => (
+            <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-white/5" key={service.title}>
+              <h2 className="font-heading text-xl font-bold text-navy dark:text-white">{service.title}</h2>
+              <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{service.description}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-8">
+          <ButtonLink to="/contact">Discuss an advisory engagement</ButtonLink>
+        </div>
+      </Section>
 
       {/* Featured Skills */}
 
@@ -267,47 +302,6 @@ export default function Home() {
 
       </Section>
 
-      {/* Testimonials */}
-
-      <Section
-        eyebrow="Testimonials"
-        title="Trusted for strategic clarity and practical architecture"
-        className="bg-white/70 dark:bg-white/[0.03]"
-      >
-
-        <div className="grid gap-6 md:grid-cols-2">
-
-          {testimonials.map((testimonial) => (
-
-            <blockquote
-              key={testimonial.author}
-              className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5"
-            >
-
-              <p className="text-lg leading-8 text-slate-700 dark:text-slate-200">
-                "{testimonial.quote}"
-              </p>
-
-              <footer className="mt-6">
-
-                <p className="font-bold text-navy dark:text-white">
-                  {testimonial.author}
-                </p>
-
-                <p className="text-sm text-slate-500 dark:text-slate-400">
-                  {testimonial.role}
-                </p>
-
-              </footer>
-
-            </blockquote>
-
-          ))}
-
-        </div>
-
-      </Section>
-
       {/* Footer CTA */}
 
       <section className="bg-navy py-16 text-white">
@@ -321,7 +315,7 @@ export default function Home() {
             </p>
 
             <h2 className="mt-3 font-heading text-3xl font-bold sm:text-4xl">
-              Open to principal architecture and AI leadership conversations.
+              Open to freelance AI advisory, architecture reviews, governance programs, and innovation partnerships.
             </h2>
 
           </div>

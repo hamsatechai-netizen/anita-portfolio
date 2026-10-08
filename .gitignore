@@ -1,5 +1,6 @@
 node_modules
 dist
+/gallery/
 .env
 .DS_Store
 *.local

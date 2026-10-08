@@ -74,10 +74,12 @@ VITE_MEDIUM_URL=https://medium.com/@your-profile
 VITE_ANALYTICS_ID=
 ```
 
-## Replace Before Publishing
+## Add Portfolio Content
 
-- `public/images/anita-placeholder.svg`
-- `public/resume/Anita-Ayyagari-Resume.pdf`
-- Social links in `.env`
-- `public/sitemap.xml` domain
-- `public/robots.txt` domain
+Create a Markdown file in the appropriate folder. The filename becomes the URL slug.
+
+- `content/blogs` for original articles and links to published writing
+- `content/publications` for papers, webinars, talks, and whitepapers
+- `content/projects` for supporting project narratives
+
+Use `externalUrl` in frontmatter when the canonical version is published elsewhere. Keep client names, screenshots, and metrics out of case studies unless they are approved for public use.

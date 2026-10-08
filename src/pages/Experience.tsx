@@ -10,8 +10,8 @@ export default function Experience() {
       <Seo title="Experience | Anita Ayyagari" description="Professional experience and architecture focus areas for Anita Ayyagari." path="/experience" />
       <Section
         eyebrow="Experience"
-        title="Customer success architecture across enterprise data and AI adoption"
-        description="A timeline of architecture leadership, governance expertise, and delivery experience."
+        title="Building at the intersection of data, AI, governance, and impact"
+        description="A journey from engineering and enterprise transformation to independent advisory, innovation, and responsible AI leadership."
       >
         <div className="relative">
           <div className="absolute left-4 top-0 h-full w-px bg-slate-200 dark:bg-white/10" />

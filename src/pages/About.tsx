@@ -10,12 +10,12 @@ export default function About() {
       <Seo title="About Anita Ayyagari | Data & AI Architecture Leader" description="Professional journey, education, and values of Anita Ayyagari." path="/about" />
       <Section
         eyebrow="About"
-        title="A data and AI architect focused on modernization with accountability"
+        title="A builder and advisor connecting deep technology with responsible impact"
         description={profile.summary}
       >
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-white/5">
-            <h2 className="font-heading text-2xl font-bold text-navy dark:text-white">Professional Journey</h2>
+            <h2 className="font-heading text-2xl font-bold text-navy dark:text-white">My Direction</h2>
             <p className="mt-4 text-lg leading-8 text-slate-600 dark:text-slate-300">{profile.focus}</p>
             <div className="mt-6 grid gap-3">
               {profile.credentials.map((credential) => (

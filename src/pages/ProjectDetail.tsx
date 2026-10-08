@@ -1,4 +1,4 @@
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Compass, UserRound } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { Section } from "../components/Section";
 import { Seo } from "../components/Seo";
@@ -30,21 +30,25 @@ export default function ProjectDetail() {
           <div className="space-y-8">
             <img className="w-full rounded-3xl border border-slate-200 bg-white object-cover shadow-executive dark:border-white/10" src={project.image} alt="" />
             <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5">
-              <h2 className="font-heading text-2xl font-bold text-navy dark:text-white">Architecture Diagram</h2>
-              <div className="mt-5 grid gap-4 rounded-2xl bg-slate-50 p-5 dark:bg-white/5 sm:grid-cols-3">
-                {["Ingest", "Govern", "Activate"].map((step) => (
-                  <div className="rounded-xl border border-slate-200 bg-white p-4 text-center font-bold text-slate-700 dark:border-white/10 dark:bg-navy/50 dark:text-slate-200" key={step}>
-                    {step}
-                  </div>
-                ))}
-              </div>
+              <Compass className="text-teal" aria-hidden="true" size={26} />
+              <h2 className="mt-4 font-heading text-2xl font-bold text-navy dark:text-white">The context</h2>
+              <p className="mt-4 leading-8 text-slate-600 dark:text-slate-300">{project.context}</p>
             </article>
             <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5">
-              <h2 className="font-heading text-2xl font-bold text-navy dark:text-white">Screenshots</h2>
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                <div className="aspect-video rounded-2xl bg-[linear-gradient(135deg,#0f172a,#14b8a6)] p-5 text-sm font-bold text-white">Dashboard placeholder</div>
-                <div className="aspect-video rounded-2xl bg-[linear-gradient(135deg,#f8fafc,#ccfbf1)] p-5 text-sm font-bold text-navy">Workflow placeholder</div>
-              </div>
+              <UserRound className="text-teal" aria-hidden="true" size={26} />
+              <h2 className="mt-4 font-heading text-2xl font-bold text-navy dark:text-white">My role</h2>
+              <p className="mt-4 leading-8 text-slate-600 dark:text-slate-300">{project.role}</p>
+            </article>
+            <article className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm dark:border-white/10 dark:bg-white/5">
+              <h2 className="font-heading text-2xl font-bold text-navy dark:text-white">Approach</h2>
+              <ol className="mt-5 space-y-4">
+                {project.approach.map((step, index) => (
+                  <li className="flex gap-4 text-slate-600 dark:text-slate-300" key={step}>
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-teal/15 text-sm font-bold text-teal">{index + 1}</span>
+                    <span className="pt-1">{step}</span>
+                  </li>
+                ))}
+              </ol>
             </article>
           </div>
 
@@ -81,6 +85,11 @@ export default function ProjectDetail() {
                 ))}
               </ul>
             </div>
+            {project.impactNote && (
+              <div className="rounded-2xl border border-teal/25 bg-teal/10 p-6 text-sm leading-6 text-slate-700 dark:text-slate-200">
+                <strong className="text-navy dark:text-white">Portfolio note:</strong> {project.impactNote}
+              </div>
+            )}
           </aside>
         </div>
       </Section>

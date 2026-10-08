@@ -45,7 +45,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <a
             className="hidden h-10 items-center gap-2 rounded-full border border-slate-300 px-4 text-sm font-bold text-navy transition hover:border-teal hover:text-teal dark:border-white/15 dark:text-white md:flex"
-            href="/resume/Anita-Ayyagari-Resume.pdf"
+            href="/resume/AnitaA_Data_AI_Architect.pdf"
             download
           >
             <Download aria-hidden="true" size={16} />
